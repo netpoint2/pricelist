@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netpoint Café Price List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #050505, #111827);
+      color: #222;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: 25px auto;
+      background: #fff;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #000000, #111827, #064e3b);
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+      border-bottom: 5px solid #facc15;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 48px;
+      letter-spacing: 3px;
+    }
+
+    .hero h2 {
+      margin: 10px 0;
+      font-size: 30px;
+      color: #facc15;
+    }
+
+    .hero p {
+      margin: 8px 0 0;
+      color: #d1d5db;
+      font-size: 16px;
+    }
+
+    .content {
+      padding: 25px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    }
+
+    .card-title {
+      background: #111827;
+      color: #facc15;
+      padding: 15px 18px;
+      font-weight: bold;
+      font-size: 17px;
+      text-transform: uppercase;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+
+    td:last-child {
+      text-align: right;
+      font-weight: bold;
+      color: #064e3b;
+      white-space: nowrap;
+    }
+
+    tr:hover {
+      background: #f9fafb;
+    }
+
+    .highlight {
+      background: #fef3c7;
+      font-weight: bold;
+    }
+
+    .notice {
+      margin: 0 25px 25px;
+      padding: 18px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #facc15, #f59e0b);
+      font-weight: bold;
+      text-align: center;
+      color: #111827;
+    }
+
+    .footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 18px;
+    }
+
+    .footer span {
+      color: #25D366;
+      font-weight: bold;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 16px 22px;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+      z-index: 999;
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
+      transform: scale(1.05);
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .container {
+        box-shadow: none;
+        margin: 0;
+        border-radius: 0;
+      }
+
+      .whatsapp-btn {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="hero">
+    <h1>NETPOINT CAFÉ</h1>
+    <h2>PRICE LIST</h2>
+    <p>Intelligence Team At Your Service — We Bring IT Solutions To The People</p>
+  </div>
+
+  <div class="content">
+
+    <div class="card">
+      <div class="card-title">Copy, Scan & Print Out</div>
+      <table>
+        <tr><td>Copy Black & White</td><td>R2.00 per page</td></tr>
+        <tr><td>Copy Color</td><td>R4.00 per page</td></tr>
+        <tr><td>Copy A3 Black & White</td><td>R6.00 per page</td></tr>
+        <tr><td>Copy A3 Color</td><td>R10.00 per page</td></tr>
+        <tr><td>Print Out Black & White</td><td>R3.00 per page</td></tr>
+        <tr><td>Print Out Color</td><td>R6.00 per page</td></tr>
+        <tr><td>Print Out A3 Black & White</td><td>R7.00 per page</td></tr>
+        <tr><td>Print Out A3 Color</td><td>R11.00 per page</td></tr>
+        <tr><td>Scan to Email</td><td>R5.00 per page</td></tr>
+        <tr><td>Scan to USB / Phone</td><td>R3.00 per page</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Fax</div>
+      <table>
+        <tr><td>01 / 02 / 03 / 04 / 05 / 06</td><td>R6.00 per page</td></tr>
+        <tr><td>07 / 08</td><td>R10.00 per page</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Typing & CV</div>
+      <table>
+        <tr><td>Typing A3</td><td>R34.99 per page</td></tr>
+        <tr><td>Typing A4 CV</td><td>R11.99 per page</td></tr>
+        <tr class="highlight"><td>Modern CV Design</td><td>R45 / R55</td></tr>
+        <tr><td>Typing A4 Letter</td><td>R14.99 per page</td></tr>
+        <tr><td>Agreements / Contracts</td><td>R19.99 per page</td></tr>
+        <tr><td>Typing Spreadsheet</td><td>R17.99 per page</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Laminating</div>
+      <table>
+        <tr><td>A4 Laminating</td><td>R15.00</td></tr>
+        <tr><td>A3 Laminating</td><td>R18.00</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Internet Access</div>
+      <table>
+        <tr><td>15 Minutes</td><td>R4.99</td></tr>
+        <tr><td>60 Minutes / 1 Hour</td><td>R25 + 11 min free</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Academics & Data Gathering</div>
+      <table>
+        <tr><td>Assignment 50–80 Marks</td><td>R120.00</td></tr>
+        <tr><td>Assignment 100+ Marks</td><td>R150.00</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Editing</div>
+      <table>
+        <tr><td>Edit PDF, PNG & JPEG</td><td>R20.00 per page</td></tr>
+        <tr><td>CV Edit PDF</td><td>R15.00 per page</td></tr>
+        <tr><td>Edit DOCX, PPTX & XLSX</td><td>R10.00 per page</td></tr>
+        <tr><td>Business Profile PDF</td><td>R50.00 per page</td></tr>
+        <tr><td>Business Profile DOCX</td><td>R30.00 per page</td></tr>
+        <tr><td>Invoice PDF</td><td>R25.00 per page</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Design for Events</div>
+      <table>
+        <tr><td>Wedding Program</td><td>R45.00</td></tr>
+        <tr class="highlight"><td>Obituary</td><td>R150.00</td></tr>
+        <tr><td>Wedding Table Numbers</td><td>R10.00 per page</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Business Marketing</div>
+      <table>
+        <tr><td>Menu A4</td><td>R35.00</td></tr>
+        <tr><td>Menu A3</td><td>R65.00</td></tr>
+        <tr><td>Business Card</td><td>R70.00 + R2 each</td></tr>
+        <tr><td>Business Proposal</td><td>R30.00 per page</td></tr>
+        <tr><td>Web Design</td><td>R100.00 per template</td></tr>
+        <tr><td>Website Development</td><td>R1500.00</td></tr>
+        <tr><td>Website Hosting</td><td>R850.00 per year</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Software</div>
+      <table>
+        <tr><td>Anti-Virus Installation</td><td>R100.00 lifetime</td></tr>
+        <tr><td>Microsoft Office</td><td>R250.00 lifetime</td></tr>
+        <tr><td>Android Software / FRP Reset</td><td>R120.00</td></tr>
+        <tr><td>Windows Software All</td><td>R450.00</td></tr>
+        <tr><td>Android Update</td><td>R10.00 per 15 min</td></tr>
+        <tr><td>Windows Update</td><td>R50.00 per hour</td></tr>
+        <tr><td>Desktop / Laptop Reset</td><td>R150.00</td></tr>
+        <tr><td>Data Recovery From USB</td><td>R100.00 per 20 files</td></tr>
+        <tr><td>Data Recovery From Drive</td><td>R150.00 per 20 files</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">WiFi</div>
+      <table>
+        <tr><td>30 Min Laptop</td><td>R20.00</td></tr>
+        <tr><td>30 Min Phone</td><td>R15.00</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">IT Consulting</div>
+      <table>
+        <tr><td>Virus Removal From USB</td><td>R50.00</td></tr>
+        <tr><td>Virus Removal From Desktop / Laptop</td><td>R150.00</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Data & Media</div>
+      <table>
+        <tr><td>Music Download & Transfer</td><td>R9.99 per album</td></tr>
+        <tr><td>Movie</td><td>R19.99 per 3 films</td></tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div class="notice">
+    NB: If the service you require is not listed here, please consult at the admin desk.
+  </div>
+
+  <div class="footer">
+    Administrator: <span>Mohau</span><br>
+    WhatsApp: <span>064 649 6892</span><br>
+    Call: <span>064 829 6851</span>
+  </div>
+
+</div>
+
+<a class="whatsapp-btn"
+   href="https://wa.me/27646496892?text=Hello%20Netpoint%20Cafe,%20I%20need%20assistance"
+   target="_blank">
+   💬 WhatsApp Us
+</a>
+
+</body>
+</html>
